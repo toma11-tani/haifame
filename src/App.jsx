@@ -10,7 +10,7 @@ import AccessPage from './pages/AccessPage'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/haifame">
       <div className="min-h-screen">
         <Navbar />
         <main>

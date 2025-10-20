@@ -9,7 +9,7 @@ const HomePage = () => {
       <section
         className="relative h-screen flex items-center justify-center bg-cover bg-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(45, 80, 22, 0.3), rgba(45, 80, 22, 0.3)), url('/images/front.jpeg')`,
+          backgroundImage: `linear-gradient(rgba(45, 80, 22, 0.3), rgba(45, 80, 22, 0.3)), url('/haifame/images/front.jpeg')`,
         }}
       >
         <div className="text-center text-white z-10 px-4">
@@ -140,7 +140,7 @@ const HomePage = () => {
             </div>
             <div>
               <img
-                src="/images/front.jpeg"
+                src="/haifame/images/front.jpeg"
                 alt="Hai Fame? Restaurant"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />

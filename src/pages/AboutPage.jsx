@@ -53,7 +53,7 @@ const AboutPage = () => {
             </div>
             <div className="order-1 lg:order-2">
               <img
-                src="/images/front.jpeg"
+                src="/haifame/images/front.jpeg"
                 alt="Hai Fame? Restaurant Front"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
