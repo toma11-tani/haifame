@@ -29,7 +29,7 @@ const AccessPage = () => {
       {/* Header */}
       <section className="section-padding bg-deep-green text-white text-center">
         <div className="container-custom">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">アクセス・予約</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Access</h1>
           <p className="text-xl md:text-2xl mb-6 font-light italic">Vieni a Trovarci</p>
           
           {/* Italian Flag Accent */}
@@ -66,9 +66,9 @@ const AccessPage = () => {
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">住所</h3>
                       <p className="text-gray-700">
-                        〒150-0001<br />
-                        東京都渋谷区路地裏1-2-3<br />
-                        <span className="text-sm text-gray-500">Shibuya-ku, Tokyo</span>
+                        〒532-0022<br />
+                        大阪府大阪市北区浪花町9-9<br />
+                        <span className="text-sm text-gray-500">Osaka-city, Osaka</span>
                       </p>
                     </div>
                   </div>
@@ -78,8 +78,7 @@ const AccessPage = () => {
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">営業時間</h3>
                       <p className="text-gray-700">
-                        <span className="font-medium">ランチ:</span> 11:30 - 14:30<br />
-                        <span className="font-medium">ディナー:</span> 18:00 - 22:00<br />
+                        <span className="font-medium"></span> 18:00 - 22:00<br />
                         <span className="font-medium text-red-600">定休日:</span> 毎週月曜日
                       </p>
                     </div>
@@ -89,7 +88,7 @@ const AccessPage = () => {
                     <Phone className="text-wood-brown flex-shrink-0 mt-1" size={28} />
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">電話番号</h3>
-                      <p className="text-gray-700 text-lg">03-1234-5678</p>
+                      <p className="text-gray-700 text-lg">070-8597-4322</p>
                     </div>
                   </div>
 
@@ -97,7 +96,7 @@ const AccessPage = () => {
                     <Mail className="text-wood-brown flex-shrink-0 mt-1" size={28} />
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">Email</h3>
-                      <p className="text-gray-700">info@haifame.jp</p>
+                      <p className="text-gray-700">info@〇〇.com</p>
                     </div>
                   </div>
                 </div>
@@ -112,7 +111,7 @@ const AccessPage = () => {
                   <div className="flex-1 h-2 bg-red-600"></div>
                 </div>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.747389438!2d139.70108!3d35.66174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b563b00109f%3A0x337328def1e2ab26!2sShibuya%2C%20Tokyo!5e0!3m2!1sen!2sjp!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8803031929206!2d135.50775077617973!3d34.708198872917116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72b1b4aa2a1%3A0xd93bd94105e5bba3!2sHai%20fame%3F!5e0!3m2!1sen!2sjp!4v1761462861063!5m2!1sen!2sjp"
                   width="100%"
                   height="350"
                   style={{ border: 0 }}
@@ -265,7 +264,7 @@ const AccessPage = () => {
             お待ちしております
           </h2>
           <p className="text-xl mb-8 font-light">
-            Hai Fame?で皆様をお迎えできることを楽しみにしております
+            Hai fame?で皆様をお迎えできることを楽しみにしております
           </p>
           <div className="flex justify-center gap-2">
             <div className="w-24 h-2 bg-green-600"></div>

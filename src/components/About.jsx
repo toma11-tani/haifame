@@ -18,7 +18,7 @@ const About = () => {
               Our Story
             </h3>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              Nestled in a quiet alleyway, Hai Fame? was born from a passion for authentic Italian cuisine and a desire to create a warm, welcoming space for our community.
+              Nestled in a quiet alleyway, Hai fame? was born from a passion for authentic Italian cuisine and a desire to create a warm, welcoming space for our community.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed">
               Our name, meaning "Are you hungry?" in Italian, reflects our mission: to satisfy your cravings with homemade dishes that transport you straight to Italy.
@@ -30,7 +30,7 @@ const About = () => {
           <div className="order-1 lg:order-2">
             <img
               src="/haifame/images/front.jpeg"
-              alt="Hai Fame? Restaurant Front"
+              alt="Hai fame? Restaurant Front"
               className="rounded-lg shadow-xl w-full h-auto"
             />
           </div>

@@ -12,14 +12,14 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative h-screen flex items-center justify-center bg-cover bg-center"
+      className="relative h-screen flex items-center justify-center bg-cover bg-top"
       style={{
         backgroundImage: `linear-gradient(rgba(45, 80, 22, 0.3), rgba(45, 80, 22, 0.3)), url('/haifame/images/front.jpeg')`,
       }}
     >
       <div className="text-center text-white z-10 px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-4 text-shadow">
-          Hai Fame?
+          Hai fame?
         </h1>
         <p className="text-xl md:text-2xl mb-8 text-shadow font-light">
           Authentic Italian in a cozy corner.

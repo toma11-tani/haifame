@@ -16,11 +16,11 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { path: '/', label: 'ホーム' },
-    { path: '/menu', label: 'メニュー' },
-    { path: '/about', label: '私たちについて' },
-    { path: '/gallery', label: 'ギャラリー' },
-    { path: '/access', label: 'アクセス・予約' },
+    { path: '/', label: 'Home' },
+    { path: '/menu', label: 'Menu' },
+    { path: '/about', label: 'About' },
+    { path: '/gallery', label: 'Gallery' },
+    { path: '/access', label: 'Access' },
   ]
 
   const isActive = (path) => {
@@ -40,7 +40,7 @@ const Navbar = () => {
             isScrolled ? 'text-deep-green' : 'text-white text-shadow'
           }`}
         >
-          Hai Fame?
+          Hai fame?
         </Link>
 
         {/* Desktop Menu */}

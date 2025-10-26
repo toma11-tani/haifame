@@ -14,13 +14,10 @@ const HomePage = () => {
       >
         <div className="text-center text-white z-10 px-4">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 text-shadow">
-            Hai Fame?
+            Hai fame?
           </h1>
-          <p className="text-2xl md:text-3xl mb-3 text-shadow font-light italic">
-            お腹が空きましたか?
-          </p>
-          <p className="text-xl md:text-2xl mb-12 text-shadow">
-            路地裏の小さな本格イタリアン
+          <p className="text-2xl md:text-3xl mb-12 text-shadow font-light italic">
+            お腹すいてる?
           </p>
           
           {/* Italian Flag Accent */}
@@ -56,10 +53,10 @@ const HomePage = () => {
       <section className="section-padding bg-warm-yellow">
         <div className="container-custom">
           <h2 className="text-4xl md:text-5xl font-bold text-center text-deep-green mb-4">
-            ようこそ
+            Welcome
           </h2>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto text-lg">
-            イタリアの小さな一角へようこそ。本格的な料理と居心地の良い雰囲気をお楽しみください。
+            イタリアの家庭料理とお酒を気軽にお楽しみください。
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -70,7 +67,7 @@ const HomePage = () => {
               <div className="inline-block p-4 bg-deep-green rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <UtensilsCrossed className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-deep-green mb-2">メニュー</h3>
+              <h3 className="text-2xl font-bold text-deep-green mb-2">Menu</h3>
               <p className="text-gray-600">本格イタリアン料理をご覧ください</p>
             </Link>
 
@@ -81,7 +78,7 @@ const HomePage = () => {
               <div className="inline-block p-4 bg-wood-brown rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <BookOpen className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-deep-green mb-2">私たちについて</h3>
+              <h3 className="text-2xl font-bold text-deep-green mb-2">About</h3>
               <p className="text-gray-600">お店の想いとこだわりをご紹介</p>
             </Link>
 
@@ -92,7 +89,7 @@ const HomePage = () => {
               <div className="inline-block p-4 bg-deep-green rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <Camera className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-deep-green mb-2">ギャラリー</h3>
+              <h3 className="text-2xl font-bold text-deep-green mb-2">Gallery</h3>
               <p className="text-gray-600">お店の雰囲気と美味しい料理</p>
             </Link>
 
@@ -103,7 +100,7 @@ const HomePage = () => {
               <div className="inline-block p-4 bg-wood-brown rounded-full mb-4 group-hover:scale-110 transition-transform">
                 <MapPin className="text-white" size={32} />
               </div>
-              <h3 className="text-2xl font-bold text-deep-green mb-2">アクセス・予約</h3>
+              <h3 className="text-2xl font-bold text-deep-green mb-2">Access</h3>
               <p className="text-gray-600">店舗情報とご予約はこちら</p>
             </Link>
           </div>
@@ -119,11 +116,11 @@ const HomePage = () => {
                 本格イタリア料理
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                Hai Fame?（ハイ ファーメ）では、イタリアの温かさと味わいをお届けします。
+                Hai fame?（アイ ファーメ）では、イタリアの温かさと味わいをお届けします。
                 すべての料理は、伝統的なレシピと最高の食材を使い、愛情を込めて作られています。
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                店名は「お腹が空きましたか？」というイタリア語。手作りパスタ、薪窯ピッツァ、
+                店名は「お腹すいてる？」というイタリア語。手作りパスタ、薪窯ピッツァ、
                 そして本場のイタリアンホスピタリティで、あなたの食欲を満たします。
               </p>
               
@@ -141,7 +138,7 @@ const HomePage = () => {
             <div>
               <img
                 src="/haifame/images/front.jpeg"
-                alt="Hai Fame? Restaurant"
+                alt="Hai fame? Restaurant"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>

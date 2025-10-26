@@ -7,7 +7,7 @@ const GalleryPage = () => {
   const images = [
     {
       url: '/haifame/images/front.jpeg',
-      alt: 'Hai Fame? Restaurant Front',
+      alt: 'Hai fame? Restaurant Front',
       category: 'Restaurant',
     },
     {
@@ -74,7 +74,7 @@ const GalleryPage = () => {
         <div className="container-custom">
           <div className="flex items-center justify-center gap-3 mb-4">
             <Camera size={48} />
-            <h1 className="text-5xl md:text-6xl font-bold">ギャラリー</h1>
+            <h1 className="text-5xl md:text-6xl font-bold">Gallery</h1>
           </div>
           <p className="text-xl md:text-2xl mb-6 font-light italic">La Nostra Galleria</p>
           

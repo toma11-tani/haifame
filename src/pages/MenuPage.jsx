@@ -121,7 +121,7 @@ const MenuPage = () => {
       {/* Header */}
       <section className="section-padding bg-deep-green text-white text-center">
         <div className="container-custom">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">メニュー</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">Menu</h1>
           <p className="text-xl md:text-2xl mb-6 font-light italic">Il Nostro Menu</p>
           
           {/* Italian Flag Accent */}
@@ -195,7 +195,7 @@ const MenuPage = () => {
       <section className="section-padding bg-warm-yellow">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-green mb-4">
-            お腹が空きましたか？
+            お腹すいてる？
           </h2>
           <p className="text-gray-700 mb-8 text-lg">
             本場のイタリアンを味わいにお越しください！

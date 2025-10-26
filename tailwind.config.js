@@ -13,8 +13,8 @@ export default {
         'soft-cream': '#faf8f3',
       },
       fontFamily: {
-        'sans': ['Montserrat', 'sans-serif'],
-        'display': ['Lato', 'sans-serif'],
+        'sans': ['Noto Sans JP', 'sans-serif'],
+        'display': ['Caveat', 'Playfair Display', 'cursive'],
       },
     },
   },

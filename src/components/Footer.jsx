@@ -4,11 +4,11 @@ import { Instagram, Facebook, Twitter } from 'lucide-react'
 
 const Footer = () => {
   const navLinks = [
-    { path: '/', label: 'ホーム' },
-    { path: '/menu', label: 'メニュー' },
-    { path: '/about', label: '私たちについて' },
-    { path: '/gallery', label: 'ギャラリー' },
-    { path: '/access', label: 'アクセス・予約' },
+    { path: '/', label: 'Home' },
+    { path: '/menu', label: 'Menu' },
+    { path: '/about', label: 'About' },
+    { path: '/gallery', label: 'Gallery' },
+    { path: '/access', label: 'Access' },
   ]
 
   return (
@@ -23,18 +23,13 @@ const Footer = () => {
       <div className="container-custom px-4 mt-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold mb-2">Hai Fame?</h3>
+            <h3 className="text-2xl font-bold mb-2">Hai fame?</h3>
             <p className="text-warm-yellow italic mb-2">
-              お腹が空きましたか?
-            </p>
-            <p className="text-gray-300 text-sm">
-              路地裏の小さな本格イタリアン
+              お腹空いてる?
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">クイックリンク</h4>
-            <p className="text-xs text-gray-400 mb-3 italic">Collegamenti Rapidi</p>
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.path}>
@@ -50,8 +45,6 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4">フォローしてください</h4>
-            <p className="text-xs text-gray-400 mb-3 italic">Seguici</p>
             <div className="flex gap-4 mb-6">
               <a
                 href="https://instagram.com"
@@ -79,15 +72,15 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-gray-300">
-              📍 東京都渋谷区<br />
-              📞 03-1234-5678
+              📍 大阪府大阪市北区浪花町9-9<br />
+              📞 070-8597-4322
             </p>
           </div>
         </div>
 
         <div className="border-t border-warm-yellow pt-6 text-center">
           <p className="text-warm-yellow mb-2">
-            © {new Date().getFullYear()} Hai Fame? - All rights reserved.
+            © {new Date().getFullYear()} Hai fame? - All rights reserved.
           </p>
           <p className="text-xs text-gray-400 italic">
             愛情を込めて ❤️ Fatto con amore

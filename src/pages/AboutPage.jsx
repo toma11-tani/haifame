@@ -7,7 +7,7 @@ const AboutPage = () => {
       {/* Header */}
       <section className="section-padding bg-deep-green text-white text-center">
         <div className="container-custom">
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">私たちについて</h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4">About</h1>
           <p className="text-xl md:text-2xl mb-6 font-light italic">La Nostra Storia</p>
           
           {/* Italian Flag Accent */}
@@ -25,14 +25,14 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl font-bold text-deep-green mb-6 flex items-center gap-3">
-                <span className="text-5xl">🇮🇹</span>
-                Hai Fame?
+                <span className="text-5xl"></span>
+                Hai fame?
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                静かな路地裏に佇む<span className="font-semibold text-deep-green">Hai Fame?</span>は、本格イタリア料理への情熱と、地域の皆様に温かく迎え入れられる空間を作りたいという想いから生まれました。
+                静かな路地裏に佇む<span className="font-semibold text-deep-green">Hai fame?</span>は、本格イタリア料理への情熱と、地域の皆様に温かく迎え入れられる空間を作りたいという想いから生まれました。
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                店名はイタリア語で<span className="italic font-semibold">「お腹が空きましたか？」</span>という意味。ローマ、ナポリ、フィレンツェの街角へとあなたを誘う手作り料理で、食欲を満たすことが私たちの使命です。
+                店名はイタリア語で<span className="italic font-semibold">「お腹すいてる？」</span>という意味。ローマ、ナポリ、フィレンツェの街角へとあなたを誘う手作り料理で、食欲を満たすことが私たちの使命です。
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
                 伝統的なイタリアのレシピと最高の地元食材を組み合わせ、両方の文化を尊重した独自の融合を生み出し、本場のイタリアの味をお届けします。
@@ -54,7 +54,7 @@ const AboutPage = () => {
             <div className="order-1 lg:order-2">
               <img
                 src="/haifame/images/front.jpeg"
-                alt="Hai Fame? Restaurant Front"
+                alt="Hai fame? Restaurant Front"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />
             </div>
@@ -142,12 +142,11 @@ const AboutPage = () => {
                   </h3>
                 </div>
                 <p className="text-wood-brown font-semibold mb-1 text-xl">
-                  田中 マルコ
+                  〇〇 〇〇
                 </p>
                 <p className="text-gray-500 italic mb-4">オーナーシェフ</p>
                 <p className="text-gray-700 leading-relaxed mb-4">
-                  ナポリ生まれ、東京育ちのシェフ・マルコは、両方の世界の良さを融合させます。
-                  ヨーロッパと日本のイタリアンキッチンで15年の経験を持ち、
+                  〇〇生まれ、〇〇育ちの〇〇 〇〇は、
                   伝統を尊重しながら革新的な料理を生み出します。
                 </p>
                 <p className="text-gray-600 italic">

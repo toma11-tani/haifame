@@ -7,7 +7,7 @@ const Gallery = () => {
   const images = [
     {
       url: '/haifame/images/front.jpeg',
-      alt: 'Hai Fame? Restaurant Front',
+      alt: 'Hai fame? Restaurant Front',
     },
     {
       url: '/haifame/images/menu1.jpg',
