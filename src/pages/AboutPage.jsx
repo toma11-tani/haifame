@@ -159,12 +159,12 @@ const AboutPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-deep-green text-white">
+      <section className="section-padding bg-warm-yellow text-deep-green">
         <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-deep-green">
             お待ちしております
           </h2>
-          <p className="text-xl mb-8 font-light">
+          <p className="text-xl mb-8 font-light text-gray-700">
             本場のイタリアンホスピタリティを体験しにお越しください
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -175,7 +175,7 @@ const AboutPage = () => {
               href="https://www.hotpepper.jp/strJ004492742/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary inline-block"
+              className="btn-primary inline-block"
             >
               予約する
             </a>
