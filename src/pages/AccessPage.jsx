@@ -1,5 +1,5 @@
 import React from 'react'
-import { MapPin, Clock, Phone, Mail, ExternalLink } from 'lucide-react'
+import { MapPin, Clock, Phone, ExternalLink } from 'lucide-react'
 
 const AccessPage = () => {
   return (
@@ -22,10 +22,10 @@ const AccessPage = () => {
       {/* Main Content */}
       <section className="section-padding">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
             {/* Contact Information */}
             <div>
-              <div className="bg-white p-8 rounded-lg shadow-xl mb-8 relative overflow-hidden">
+              <div className="bg-white p-8 rounded-lg shadow-xl mb-8 relative overflow-hidden h-full">
                 {/* Italian Flag Top Border */}
                 <div className="absolute top-0 left-0 right-0 flex">
                   <div className="flex-1 h-3 bg-green-600"></div>
@@ -67,40 +67,12 @@ const AccessPage = () => {
                       <p className="text-gray-700 text-lg">070-8597-4322</p>
                     </div>
                   </div>
-
-                  <div className="flex items-start gap-4 p-4 bg-soft-cream rounded-lg hover:shadow-md transition-shadow">
-                    <Mail className="text-wood-brown flex-shrink-0 mt-1" size={28} />
-                    <div>
-                      <h3 className="font-semibold text-deep-green mb-1 text-lg">Email</h3>
-                      <p className="text-gray-700">info@〇〇.com</p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-
-              {/* Map */}
-              <div className="bg-white p-4 rounded-lg shadow-xl relative overflow-hidden">
-                {/* Italian Flag Top Border */}
-                <div className="absolute top-0 left-0 right-0 flex">
-                  <div className="flex-1 h-2 bg-green-600"></div>
-                  <div className="flex-1 h-2 bg-white"></div>
-                  <div className="flex-1 h-2 bg-red-600"></div>
-                </div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8803031929206!2d135.50775077617973!3d34.708198872917116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72b1b4aa2a1%3A0xd93bd94105e5bba3!2sHai%20fame%3F!5e0!3m2!1sen!2sjp!4v1761462861063!5m2!1sen!2sjp"
-                  width="100%"
-                  height="350"
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="rounded mt-2"
-                ></iframe>
               </div>
             </div>
 
             {/* External Links */}
-            <div className="bg-white p-8 rounded-lg shadow-xl relative overflow-hidden">
+            <div className="bg-white p-8 rounded-lg shadow-xl relative overflow-hidden h-full">
               {/* Italian Flag Top Border */}
               <div className="absolute top-0 left-0 right-0 flex">
                 <div className="flex-1 h-3 bg-green-600"></div>
@@ -148,6 +120,26 @@ const AccessPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Map */}
+          <div className="bg-white p-4 rounded-lg shadow-xl relative overflow-hidden mt-12">
+            {/* Italian Flag Top Border */}
+            <div className="absolute top-0 left-0 right-0 flex">
+              <div className="flex-1 h-2 bg-green-600"></div>
+              <div className="flex-1 h-2 bg-white"></div>
+              <div className="flex-1 h-2 bg-red-600"></div>
+            </div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.8803031929206!2d135.50775077617973!3d34.708198872917116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72b1b4aa2a1%3A0xd93bd94105e5bba3!2sHai%20fame%3F!5e0!3m2!1sen!2sjp!4v1761462861063!5m2!1sen!2sjp"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded mt-2"
+            ></iframe>
           </div>
         </div>
       </section>

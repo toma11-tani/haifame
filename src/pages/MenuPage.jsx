@@ -76,7 +76,7 @@ const MenuPage = () => {
                 <p className="text-wood-brown text-xl italic">{category.subtitle}</p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 {category.items.map((item, itemIndex) => (
                   <div
                     key={itemIndex}
