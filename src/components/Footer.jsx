@@ -72,7 +72,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-sm text-gray-300">
-              📍 大阪府大阪市北区浪花町9-9<br />
+              📍 大阪府大阪市北区浪花町9-9 1F<br />
               📞 070-8597-4322
             </p>
           </div>

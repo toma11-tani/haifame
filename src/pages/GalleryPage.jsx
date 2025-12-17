@@ -142,7 +142,12 @@ const GalleryPage = () => {
           <a href="/menu" className="btn-primary inline-block mr-4">
             メニューを見る
           </a>
-          <a href="/access" className="btn-secondary inline-block">
+          <a
+            href="https://www.hotpepper.jp/strJ004492742/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-secondary inline-block"
+          >
             予約する
           </a>
         </div>

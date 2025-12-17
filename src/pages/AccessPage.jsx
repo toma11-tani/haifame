@@ -1,29 +1,7 @@
-import React, { useState } from 'react'
-import { MapPin, Clock, Phone, Mail, Calendar } from 'lucide-react'
+import React from 'react'
+import { MapPin, Clock, Phone, Mail, ExternalLink } from 'lucide-react'
 
 const AccessPage = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    date: '',
-    time: '',
-    guests: '2',
-    message: '',
-  })
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    alert('Grazie! 予約リクエストを受け付けました。後ほどご連絡いたします。')
-    setFormData({ name: '', email: '', date: '', time: '', guests: '2', message: '' })
-  }
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    })
-  }
-
   return (
     <div className="min-h-screen bg-warm-yellow">
       {/* Header */}
@@ -66,9 +44,7 @@ const AccessPage = () => {
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">住所</h3>
                       <p className="text-gray-700">
-                        〒532-0022<br />
-                        大阪府大阪市北区浪花町9-9<br />
-                        <span className="text-sm text-gray-500">Osaka-city, Osaka</span>
+                        大阪府大阪市北区浪花町9-9 1F
                       </p>
                     </div>
                   </div>
@@ -78,8 +54,8 @@ const AccessPage = () => {
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">営業時間</h3>
                       <p className="text-gray-700">
-                        <span className="font-medium"></span> 18:00 - 22:00<br />
-                        <span className="font-medium text-red-600">定休日:</span> 毎週月曜日
+                        <span className="font-medium"></span> 16:00〜24:00（L.O 23:00）<br />
+                        <span className="font-medium text-red-600">定休日:</span> 月曜日
                       </p>
                     </div>
                   </div>
@@ -123,7 +99,7 @@ const AccessPage = () => {
               </div>
             </div>
 
-            {/* Reservation Form */}
+            {/* External Links */}
             <div className="bg-white p-8 rounded-lg shadow-xl relative overflow-hidden">
               {/* Italian Flag Top Border */}
               <div className="absolute top-0 left-0 right-0 flex">
@@ -133,124 +109,43 @@ const AccessPage = () => {
               </div>
 
               <div className="flex items-center gap-3 mb-2 mt-2">
-                <Calendar className="text-deep-green" size={32} />
+                <ExternalLink className="text-deep-green" size={32} />
                 <h2 className="text-3xl font-bold text-deep-green">
-                  ご予約
+                  ご案内
                 </h2>
               </div>
-              <p className="text-gray-600 mb-6 italic text-sm">Prenota un Tavolo</p>
+              <p className="text-gray-600 mb-6 italic text-sm">Link Esterni</p>
 
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label htmlFor="name" className="block text-gray-700 font-medium mb-2">
-                    お名前 *
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all"
-                    placeholder="山田 太郎"
-                  />
-                </div>
-
-                <div>
-                  <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
-                    メールアドレス *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all"
-                    placeholder="example@email.com"
-                  />
-                </div>
-
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="date" className="block text-gray-700 font-medium mb-2">
-                      日付 *
-                    </label>
-                    <input
-                      type="date"
-                      id="date"
-                      name="date"
-                      value={formData.date}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="time" className="block text-gray-700 font-medium mb-2">
-                      時間 *
-                    </label>
-                    <input
-                      type="time"
-                      id="time"
-                      name="time"
-                      value={formData.time}
-                      onChange={handleChange}
-                      required
-                      className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all"
-                    />
+              <div className="space-y-6">
+                <div className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <div className="p-6 text-center">
+                    <h3 className="text-2xl font-bold text-deep-green mb-3">Hotpepper</h3>
+                    <p className="text-gray-700 mb-6">公式ページで空席状況とご予約を承ります。</p>
+                    <a
+                      href="https://www.hotpepper.jp/strJ004492742/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-primary inline-block"
+                    >
+                      Hotpepperを開く
+                    </a>
                   </div>
                 </div>
 
-                <div>
-                  <label htmlFor="guests" className="block text-gray-700 font-medium mb-2">
-                    人数 *
-                  </label>
-                  <select
-                    id="guests"
-                    name="guests"
-                    value={formData.guests}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all"
-                  >
-                    {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
-                      <option key={num} value={num}>
-                        {num}名
-                      </option>
-                    ))}
-                  </select>
+                <div className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow">
+                  <div className="p-6 text-center">
+                    <h3 className="text-2xl font-bold text-deep-green mb-3">食べログ</h3>
+                    <p className="text-gray-700 mb-6">レビューや写真はこちらからご覧ください。</p>
+                    <a
+                      href="https://tabelog.com/osaka/A2701/A270103/27152494/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="btn-secondary inline-block"
+                    >
+                      食べログを開く
+                    </a>
+                  </div>
                 </div>
-
-                <div>
-                  <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
-                    メッセージ（任意）
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows="3"
-                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-deep-green focus:border-transparent transition-all resize-none"
-                    placeholder="アレルギーやリクエストがあればお書きください"
-                  ></textarea>
-                </div>
-
-                <button type="submit" className="btn-primary w-full text-lg py-4">
-                  予約する
-                </button>
-              </form>
-
-              <div className="mt-6 p-4 bg-soft-cream rounded-lg">
-                <p className="text-sm text-gray-600 text-center">
-                  <span className="font-semibold text-deep-green">※</span> ご予約はメールにて確認させていただきます
-                  <br />
-                  <span className="italic text-xs">La prenotazione sarà confermata via email</span>
-                </p>
               </div>
             </div>
           </div>

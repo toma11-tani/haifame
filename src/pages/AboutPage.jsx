@@ -26,16 +26,16 @@ const AboutPage = () => {
             <div className="order-2 lg:order-1">
               <h2 className="text-4xl font-bold text-deep-green mb-6 flex items-center gap-3">
                 <span className="text-5xl"></span>
-                Hai fame?
+                CONCEPT
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                静かな路地裏に佇む<span className="font-semibold text-deep-green">Hai fame?</span>は、本格イタリア料理への情熱と、地域の皆様に温かく迎え入れられる空間を作りたいという想いから生まれました。
+                Hai fame? は「イタリアの家みたいな食堂」。
               </p>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                店名はイタリア語で<span className="italic font-semibold">「お腹すいてる？」</span>という意味。ローマ、ナポリ、フィレンツェの街角へとあなたを誘う手作り料理で、食欲を満たすことが私たちの使命です。
+                誰でも気楽に、ふらっと立ち寄れる場所に。
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                伝統的なイタリアのレシピと最高の地元食材を組み合わせ、両方の文化を尊重した独自の融合を生み出し、本場のイタリアの味をお届けします。
+                家のような温かさをそのままに、お腹も気持ちも満たせるように。
               </p>
 
               {/* Italian Flag Divider */}
@@ -73,11 +73,11 @@ const AboutPage = () => {
                 <Heart className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-3">
-                愛情を込めて
+                CUISINE
               </h3>
-              <p className="text-gray-600 mb-2 italic text-sm">Fatto con Amore</p>
+              <p className="text-gray-600 mb-2 italic text-sm">Cucina di Casa</p>
               <p className="text-gray-600 text-sm">
-                すべての料理は、おばあちゃんが作ってくれたように、心を込めて丁寧に作られています
+                化学調味料は使わず、素朴で滋味深い郷土料理を。有名どころだけでなく、少しマイナーな地域の味も気軽に。
               </p>
             </div>
 
@@ -92,11 +92,11 @@ const AboutPage = () => {
                 <Users className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-3">
-                地元との繋がり
+                WINE
               </h3>
-              <p className="text-gray-600 mb-2 italic text-sm">Comunità Locale</p>
+              <p className="text-gray-600 mb-2 italic text-sm">Vini Locali</p>
               <p className="text-gray-600 text-sm">
-                地元の農家や生産者から新鮮な食材を仕入れています
+                地元ワインと料理の“初めての組み合わせ”を、手頃に楽しむ。一杯からでも、気軽にどうぞ。
               </p>
             </div>
 
@@ -111,11 +111,11 @@ const AboutPage = () => {
                 <Award className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-3">
-                イタリアの伝統
+                SPACE
               </h3>
-              <p className="text-gray-600 mb-2 italic text-sm">Tradizione Italiana</p>
+              <p className="text-gray-600 mb-2 italic text-sm">Spazio Confortevole</p>
               <p className="text-gray-600 text-sm">
-                代々受け継がれてきた本格的なレシピ
+                雑多でにぎやかな、あのイタリアの夜を思い出せる空気感を目指して。
               </p>
             </div>
           </div>
@@ -167,9 +167,19 @@ const AboutPage = () => {
           <p className="text-xl mb-8 font-light">
             本場のイタリアンホスピタリティを体験しにお越しください
           </p>
-          <a href="/access" className="btn-secondary inline-block">
-            アクセス・予約
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/access" className="btn-secondary inline-block">
+              アクセス
+            </a>
+            <a
+              href="https://www.hotpepper.jp/strJ004492742/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary inline-block"
+            >
+              予約する
+            </a>
+          </div>
         </div>
       </section>
     </div>

@@ -34,12 +34,14 @@ const HomePage = () => {
             >
               メニューを見る
             </Link>
-            <Link
-              to="/access"
+            <a
+              href="https://www.hotpepper.jp/strJ004492742/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn-secondary text-lg inline-block"
             >
               予約する
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -116,12 +118,10 @@ const HomePage = () => {
                 本格イタリア料理
               </h2>
               <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                Hai fame?（アイ ファーメ）では、イタリアの温かさと味わいをお届けします。
-                すべての料理は、伝統的なレシピと最高の食材を使い、愛情を込めて作られています。
+                Hai fame? は「イタリアの家みたいな食堂」。
               </p>
               <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                店名は「お腹すいてる？」というイタリア語。手作りパスタ、薪窯ピッツァ、
-                そして本場のイタリアンホスピタリティで、あなたの食欲を満たします。
+                ひとりでも、ふらっと。誰でも気楽に食べて、飲める場所を目指しています。
               </p>
               
               {/* Italian Flag Divider */}

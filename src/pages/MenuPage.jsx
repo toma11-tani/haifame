@@ -4,113 +4,36 @@ const MenuPage = () => {
   const menuCategories = [
     {
       icon: '🍝',
-      title: 'Pasta',
-      subtitle: 'Le Nostre Paste',
+      title: 'Signature',
+      subtitle: 'I Nostri Piatti',
       items: [
         {
-          name: 'Carbonara',
-          nameIt: 'Carbonara Classica',
-          description: 'Classic Roman pasta with guanciale, egg, and pecorino',
+          name: 'ポルペッティ（肉団子）',
+          nameIt: 'Polpette',
+          description: 'しっかり食べごたえのある一皿。素朴で滋味深い味わいです。',
           price: '¥1,400',
           image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=800',
         },
         {
-          name: 'Amatriciana',
-          nameIt: 'Amatriciana Tradizionale',
-          description: 'Tomato sauce with guanciale and pecorino romano',
-          price: '¥1,300',
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800',
-        },
-        {
-          name: 'Aglio e Olio',
-          nameIt: 'Aglio, Olio e Peperoncino',
-          description: 'Simple yet delicious garlic and olive oil pasta',
-          price: '¥1,100',
-          image: 'https://images.unsplash.com/photo-1627662168781-d324f2ee8889?q=80&w=800',
-        },
-      ],
-    },
-    {
-      icon: '🍕',
-      title: 'Pizza',
-      subtitle: 'Le Nostre Pizze',
-      items: [
-        {
-          name: 'Margherita',
-          nameIt: 'Pizza Margherita',
-          description: 'Fresh mozzarella, tomato sauce, and basil',
-          price: '¥1,500',
-          image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?q=80&w=800',
-        },
-        {
-          name: 'Quattro Formaggi',
-          nameIt: 'Pizza Quattro Formaggi',
-          description: 'Four cheese blend on crispy thin crust',
-          price: '¥1,700',
-          image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=800',
-        },
-        {
-          name: 'Prosciutto e Rucola',
-          nameIt: 'Pizza Prosciutto e Rucola',
-          description: 'Parma ham and fresh arugula',
-          price: '¥1,800',
-          image: 'https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?q=80&w=800',
-        },
-      ],
-    },
-    {
-      icon: '🥗',
-      title: 'Antipasto',
-      subtitle: 'I Nostri Antipasti',
-      items: [
-        {
-          name: 'Caprese Salad',
-          nameIt: 'Insalata Caprese',
-          description: 'Fresh tomatoes, mozzarella, and basil',
-          price: '¥900',
+          name: '前菜盛り',
+          nameIt: 'Antipasti Misti',
+          description: 'イタリアのお惣菜を少しずつ。野菜中心で素材の味を楽しめます。',
+          price: '¥1,200',
           image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?q=80&w=800',
         },
         {
-          name: 'Bruschetta',
-          nameIt: 'Bruschetta al Pomodoro',
-          description: 'Toasted bread with tomatoes and garlic',
+          name: 'パスタ',
+          nameIt: 'Pasta del Giorno',
+          description: 'その日食べたい“気分”に合わせて。おなかいっぱい食べてほしいパスタです。',
+          price: '¥1,100',
+          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800',
+        },
+        {
+          name: '自家製パン（フォカッチャ／カラッリ）',
+          nameIt: 'Pane Fatto in Casa',
+          description: '毎日焼くパン。食前酒の一杯と一緒にどうぞ。',
           price: '¥800',
           image: 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?q=80&w=800',
-        },
-        {
-          name: 'Prosciutto Platter',
-          nameIt: 'Tagliere di Prosciutto',
-          description: 'Selection of Italian cured meats',
-          price: '¥1,200',
-          image: 'https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800',
-        },
-      ],
-    },
-    {
-      icon: '🍷',
-      title: 'Drinks',
-      subtitle: 'Le Nostre Bevande',
-      items: [
-        {
-          name: 'House Red Wine',
-          nameIt: 'Vino Rosso della Casa',
-          description: 'Italian red wine selection',
-          price: '¥700/glass',
-          image: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=800',
-        },
-        {
-          name: 'House White Wine',
-          nameIt: 'Vino Bianco della Casa',
-          description: 'Crisp Italian white wine',
-          price: '¥700/glass',
-          image: 'https://images.unsplash.com/photo-1547595628-c61a29f496f0?q=80&w=800',
-        },
-        {
-          name: 'Espresso',
-          nameIt: 'Caffè Espresso',
-          description: 'Authentic Italian espresso',
-          price: '¥400',
-          image: 'https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=800',
         },
       ],
     },
@@ -200,7 +123,12 @@ const MenuPage = () => {
           <p className="text-gray-700 mb-8 text-lg">
             本場のイタリアンを味わいにお越しください！
           </p>
-          <a href="/access" className="btn-primary inline-block">
+          <a
+            href="https://www.hotpepper.jp/strJ004492742/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-block"
+          >
             予約する
           </a>
         </div>
