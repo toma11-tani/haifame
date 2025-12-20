@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta http-equiv="refresh" content="0;url=/haifame/">
+    <script>
+      const path = window.location.pathname.replace(/^\/haifame/, '');
+      const search = window.location.search || '';
+      const hash = window.location.hash || '';
+      const target = `/haifame/${path}`.replace(/\/+$/, '/') + search + hash;
+      window.location.replace(target);
+    </script>
+  </head>
+  <body>
+    <p><a href="/haifame/">Redirecting to Hai fame?</a></p>
+  </body>
+</html>
