@@ -40,7 +40,9 @@ const Navbar = () => {
             isScrolled ? 'text-deep-green' : 'text-white text-shadow'
           }`}
         >
-          Hai fame?
+          <ruby>
+            Hai fame?<rt className="text-sm">アイファーメ</rt>
+          </ruby>
         </Link>
 
         {/* Desktop Menu */}
