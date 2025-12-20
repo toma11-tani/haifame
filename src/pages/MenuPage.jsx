@@ -83,7 +83,7 @@ const MenuPage = () => {
                     key={itemIndex}
                     className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
                   >
-                    <div className="h-48 overflow-hidden relative">
+                    <div className="overflow-hidden relative aspect-[4/3]">
                       <img
                         src={item.image}
                         alt={item.name}
