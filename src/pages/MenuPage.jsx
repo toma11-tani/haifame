@@ -63,7 +63,8 @@ const MenuPage = () => {
             愛情と最高の地元食材で作る本格イタリアンの味わいをお楽しみください
           </p>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto text-lg">
-            迷ったら「前菜盛り → 一品 → パスタ → デザート」。まずは食前酒の一杯から、気軽にどうぞ。
+            迷ったら「前菜盛り → 一品 → パスタ → デザート」。<br />
+            まずは食前酒の一杯から、気軽にどうぞ。
           </p>
 
           {menuCategories.map((category, categoryIndex) => (
