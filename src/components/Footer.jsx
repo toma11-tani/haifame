@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Instagram, Facebook, Twitter } from 'lucide-react'
+import { Instagram } from 'lucide-react'
 
 const Footer = () => {
   const navLinks = [
@@ -54,22 +54,6 @@ const Footer = () => {
               >
                 <Instagram size={28} />
               </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-warm-yellow hover:text-white transition-colors hover:scale-110 transform"
-              >
-                <Facebook size={28} />
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-warm-yellow hover:text-white transition-colors hover:scale-110 transform"
-              >
-                <Twitter size={28} />
-              </a>
             </div>
             <p className="text-sm text-gray-300">
               📍 大阪府大阪市北区浪花町9-9 1F<br />
@@ -83,7 +67,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Hai fame? - All rights reserved.
           </p>
           <p className="text-xs text-gray-400 italic">
-            愛情を込めて ❤️ Fatto con amore
+            
           </p>
         </div>
       </div>
