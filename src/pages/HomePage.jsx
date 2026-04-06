@@ -13,25 +13,19 @@ const HomePage = () => {
         }}
       >
         <div className="text-center text-white z-10 px-4">
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-shadow">
+          <h1 className="text-6xl md:text-8xl font-bold mb-10 text-shadow">
             Hai fame?
           </h1>
-          <p className="text-2xl md:text-3xl mb-12 text-shadow font-light italic">
-            お腹すいてる?
-          </p>
-          
+
           {/* Italian Flag Accent */}
-          <div className="flex justify-center gap-2 mb-8">
+          <div className="flex justify-center gap-2 mb-10">
             <div className="w-16 h-2 bg-green-600"></div>
             <div className="w-16 h-2 bg-white"></div>
             <div className="w-16 h-2 bg-red-600"></div>
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link
-              to="/menu"
-              className="btn-primary text-lg inline-block"
-            >
+            <Link to="/menu" className="btn-primary text-lg inline-block">
               メニューを見る
             </Link>
             <a
@@ -45,21 +39,30 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
           <ChevronDown size={40} />
         </div>
       </section>
 
-      {/* Quick Links Section */}
+      {/* Concept Section */}
       <section className="section-padding bg-warm-yellow">
         <div className="container-custom">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-deep-green mb-4">
-            Welcome
-          </h2>
-          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto text-lg">
-            イタリアの家庭料理とお酒を気軽にお楽しみください。
-          </p>
+          <div className="max-w-2xl mx-auto text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-bold text-deep-green mb-6">
+              Hai fame?
+            </h2>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              「お腹空いてる？」——これがお店の名前の意味です。<br />
+              「食堂」のような雰囲気のお店を目指しています。
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed mb-4">
+              常連も、初めての人も。ひとりでも、大勢でも。<br />
+              誰でも気軽に食べて、飲んで、くつろげる場所に。
+            </p>
+            <p className="text-gray-700 text-base leading-relaxed">
+              肩肘張らずに、ふらっと立ち寄ってください。
+            </p>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Link
@@ -70,7 +73,7 @@ const HomePage = () => {
                 <UtensilsCrossed className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-2">Menu</h3>
-              <p className="text-gray-600">本格イタリアン料理をご覧ください</p>
+              <p className="text-gray-600">定番メニューをご覧ください</p>
             </Link>
 
             <Link
@@ -81,7 +84,7 @@ const HomePage = () => {
                 <BookOpen className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-2">About</h3>
-              <p className="text-gray-600">お店の想いとこだわりをご紹介</p>
+              <p className="text-gray-600">お店の想いとこだわり</p>
             </Link>
 
             <Link
@@ -92,7 +95,7 @@ const HomePage = () => {
                 <Camera className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-2">Gallery</h3>
-              <p className="text-gray-600">お店の雰囲気と美味しい料理</p>
+              <p className="text-gray-600">お店の雰囲気と料理</p>
             </Link>
 
             <Link
@@ -103,7 +106,7 @@ const HomePage = () => {
                 <MapPin className="text-white" size={32} />
               </div>
               <h3 className="text-2xl font-bold text-deep-green mb-2">Access</h3>
-              <p className="text-gray-600">店舗情報とご予約はこちら</p>
+              <p className="text-gray-600">店舗情報とご予約</p>
             </Link>
           </div>
         </div>
@@ -115,16 +118,15 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-deep-green mb-6">
-                本格イタリア料理
+                初めての体験を、気軽に。
               </h2>
-              <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                Hai fame? は「イタリアの家みたいな食堂」。
+              <p className="text-gray-700 mb-4 leading-relaxed text-base">
+                知らなかった郷土料理、飲んだことのない地元のワイン。
               </p>
-              <p className="text-gray-700 mb-6 leading-relaxed text-lg">
-                ひとりでも、ふらっと。誰でも気楽に食べて、飲める場所を目指しています。
+              <p className="text-gray-700 mb-6 leading-relaxed text-base">
+                お金をかけずに、でも確かな「初めて」に出会える場所を目指しています。
               </p>
-              
-              {/* Italian Flag Divider */}
+
               <div className="flex gap-2 mb-6">
                 <div className="flex-1 h-1 bg-green-600"></div>
                 <div className="flex-1 h-1 bg-white border border-gray-300"></div>
@@ -132,7 +134,7 @@ const HomePage = () => {
               </div>
 
               <Link to="/about" className="btn-primary inline-block">
-                もっと詳しく
+                お店について
               </Link>
             </div>
             <div>

@@ -1,44 +1,49 @@
 import React from 'react'
 
-const MenuPage = () => {
-  const menuCategories = [
-    {
-      icon: '🍝',
-      title: 'Signature',
-      subtitle: 'I Nostri Piatti',
-      items: [
-        {
-          name: 'ポルペッティ（肉団子）',
-          nameIt: 'Polpette',
-          description: 'しっかり食べごたえのある一皿。素朴で滋味深い味わいです。',
-          price: '¥1,400',
-          image: 'https://images.unsplash.com/photo-1612874742237-6526221588e3?q=80&w=800',
-        },
-        {
-          name: '前菜盛り',
-          nameIt: 'Antipasti Misti',
-          description: 'イタリアのお惣菜を少しずつ。野菜中心で素材の味を楽しめます。',
-          price: '¥1,200',
-          image: 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?q=80&w=800',
-        },
-        {
-          name: 'パスタ',
-          nameIt: 'Pasta del Giorno',
-          description: 'その日食べたい“気分”に合わせて。おなかいっぱい食べてほしいパスタです。',
-          price: '¥1,100',
-          image: 'https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?q=80&w=800',
-        },
-        {
-          name: '自家製パン（フォカッチャ／カラッリ）',
-          nameIt: 'Pane Fatto in Casa',
-          description: '毎日焼くパン。食前酒の一杯と一緒にどうぞ。',
-          price: '¥800',
-          image: 'https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?q=80&w=800',
-        },
-      ],
-    },
-  ]
+const menuItems = [
+  {
+    name: '前菜盛り',
+    nameIt: 'Antipasti Misti',
+    category: '前菜',
+    categoryIt: 'Antipasto',
+    description: 'イタリアの前菜を少しずつ。ボリュームたっぷり。',
+    image: '/haifame/images/antipasti.jpg',
+  },
+  {
+    name: 'ポルペッティ（肉団子）',
+    nameIt: 'Polpette',
+    category: '一品',
+    categoryIt: 'Piatto',
+    description: 'しっかり食べごたえのある一皿。素朴で滋味深い味わいです。',
+    image: '/haifame/images/Polpette.jpg',
+  },
+  {
+    name: 'パスタ',
+    nameIt: 'Pasta del Giorno',
+    category: 'パスタ',
+    categoryIt: 'Pasta',
+    description: 'その日食べたい"気分"に合わせて。おなかいっぱい食べてほしいパスタです。',
+    image: '/haifame/images/pasta.jpg',
+  },
+  {
+    name: 'ドルチェ（日替わり）',
+    nameIt: 'Dolce del Giorno',
+    category: 'ドルチェ',
+    categoryIt: 'Dolce',
+    description: 'その日のおすすめを。店内のボードでご確認ください。',
+    image: '/haifame/images/dolci.jpg',
+  },
+  {
+    name: '自家製レモンチェッロのソーダ割り',
+    nameIt: 'Limoncello Soda',
+    category: 'ドリンク',
+    categoryIt: 'Drink',
+    description: '自家製ならではのさわやかな香り。食前・食中どちらにも。',
+    image: '/haifame/images/drink.jpg',
+  },
+]
 
+const MenuPage = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
@@ -46,8 +51,6 @@ const MenuPage = () => {
         <div className="container-custom">
           <h1 className="text-5xl md:text-6xl font-bold mb-4">Menu</h1>
           <p className="text-xl md:text-2xl mb-6 font-light italic">Il Nostro Menu</p>
-          
-          {/* Italian Flag Accent */}
           <div className="flex justify-center gap-2">
             <div className="w-20 h-2 bg-green-600"></div>
             <div className="w-20 h-2 bg-white"></div>
@@ -59,85 +62,83 @@ const MenuPage = () => {
       {/* Menu Content */}
       <section className="section-padding">
         <div className="container-custom">
-          <p className="text-center text-gray-600 mb-16 max-w-2xl mx-auto text-lg">
-            愛情と最高の地元食材で作る本格イタリアンの味わいをお楽しみください
-          </p>
-          <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto text-lg">
-            迷ったら「前菜盛り → 一品 → パスタ → デザート」。<br />
-            まずは食前酒の一杯から、気軽にどうぞ。
-          </p>
-
-          {menuCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="mb-20">
-              <div className="text-center mb-10">
-                <div className="flex items-center justify-center gap-3 mb-2">
-                  <span className="text-5xl">{category.icon}</span>
-                  <h2 className="text-4xl font-bold text-deep-green">{category.title}</h2>
-                </div>
-                <p className="text-wood-brown text-xl italic">{category.subtitle}</p>
-              </div>
-
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                {category.items.map((item, itemIndex) => (
-                  <div
-                    key={itemIndex}
-                    className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
-                  >
-                    <div className="overflow-hidden relative aspect-[4/3]">
-                      <img
-                        src={item.image}
-                        alt={item.name}
-                        className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
-                      />
-                      {/* Italian Flag Corner */}
-                      <div className="absolute top-2 right-2 flex gap-1">
-                        <div className="w-2 h-6 bg-green-600"></div>
-                        <div className="w-2 h-6 bg-white"></div>
-                        <div className="w-2 h-6 bg-red-600"></div>
-                      </div>
-                    </div>
-                    <div className="p-5">
-                      <div className="flex justify-between items-start mb-2">
-                        <div>
-                          <h3 className="text-xl font-semibold text-deep-green">
-                            {item.name}
-                          </h3>
-                          <p className="text-sm text-wood-brown italic">{item.nameIt}</p>
-                        </div>
-                        <span className="text-wood-brown font-bold text-lg">
-                          {item.price}
-                        </span>
-                      </div>
-                      <p className="text-gray-600 text-sm">{item.description}</p>
-                    </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {menuItems.map((item, index) => (
+              <div
+                key={index}
+                className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              >
+                <div className="overflow-hidden relative aspect-square">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute bottom-2 left-2 bg-deep-green bg-opacity-80 text-white text-xs px-2 py-1 rounded">
+                    {item.category} / <span className="italic">{item.categoryIt}</span>
                   </div>
-                ))}
+                </div>
+                <div className="p-5">
+                  <h3 className="text-xl font-semibold text-deep-green mb-1">
+                    {item.name}
+                  </h3>
+                  <p className="text-sm text-wood-brown italic mb-3">{item.nameIt}</p>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+
+            {/* 本日のおすすめカード */}
+            <div className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
+              <div className="overflow-hidden relative aspect-square">
+                <img
+                  src="/haifame/images/menu.JPG"
+                  alt="本日のおすすめボード"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute bottom-2 left-2 bg-deep-green bg-opacity-80 text-white text-xs px-2 py-1 rounded">
+                  本日のおすすめ / <span className="italic">Il Giorno</span>
+                </div>
+              </div>
+              <div className="p-5">
+                <h3 className="text-xl font-semibold text-deep-green mb-1">本日のおすすめ</h3>
+                <p className="text-sm text-wood-brown italic mb-3">Il Piatto del Giorno</p>
+                <p className="text-gray-600 text-sm">その日の仕入れで変わる一品。店内のボードでご確認ください。</p>
               </div>
             </div>
-          ))}
-          <p className="text-center text-gray-600 mt-8 mb-4 text-sm">
-            ※メニューは季節や仕入れで変わります。詳しくは店内メニューでご案内します。
+          </div>
+          <p className="text-center text-gray-700 mt-10 mb-2 text-base">
+            迷ったら、前菜盛り・一品・パスタ・ドルチェの順でお楽しみください。<br />
+            まずは一杯から、気軽にどうぞ。
+          </p>
+          <p className="text-center text-gray-400 mt-2 text-sm">
+            ※メニューは季節や仕入れによって変わります。
           </p>
         </div>
       </section>
 
-      {/* Call to Action */}
+      {/* CTA */}
       <section className="section-padding bg-warm-yellow">
         <div className="container-custom text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-deep-green mb-4">
-            お腹すいてる？
+            Hai fame?
           </h2>
-          <p className="text-gray-700 mb-8 text-lg">
-            本場のイタリアンを味わいにお越しください！
+          <p className="text-gray-700 mb-8 text-base">
+            ふらっとお立ち寄りください。
           </p>
-          <a
-            href="https://www.hotpepper.jp/strJ004492742/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-block"
-          >
-            予約する
-          </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/haifame/access" className="btn-secondary inline-block">
+              アクセス
+            </a>
+            <a
+              href="https://www.hotpepper.jp/strJ004492742/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-block"
+            >
+              予約する
+            </a>
+          </div>
         </div>
       </section>
     </div>

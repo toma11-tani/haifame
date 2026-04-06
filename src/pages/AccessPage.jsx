@@ -64,7 +64,7 @@ const AccessPage = () => {
                     <Phone className="text-wood-brown flex-shrink-0 mt-1" size={28} />
                     <div>
                       <h3 className="font-semibold text-deep-green mb-1 text-lg">電話番号</h3>
-                      <p className="text-gray-700 text-lg">070-8597-4322</p>
+                      <p className="text-gray-700 text-base">070-8597-4322</p>
                     </div>
                   </div>
                 </div>
@@ -144,22 +144,6 @@ const AccessPage = () => {
         </div>
       </section>
 
-      {/* Additional Info */}
-      <section className="section-padding bg-deep-green text-white">
-        <div className="container-custom text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            お待ちしております
-          </h2>
-          <p className="text-xl mb-8 font-light">
-            Hai fame?で皆様をお迎えできることを楽しみにしております
-          </p>
-          <div className="flex justify-center gap-2">
-            <div className="w-24 h-2 bg-green-600"></div>
-            <div className="w-24 h-2 bg-white"></div>
-            <div className="w-24 h-2 bg-red-600"></div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

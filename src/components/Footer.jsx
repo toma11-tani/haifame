@@ -24,9 +24,6 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-2">Hai fame?</h3>
-            <p className="text-warm-yellow italic mb-2">
-              お腹すいてる?
-            </p>
           </div>
 
           <div>
@@ -47,7 +44,7 @@ const Footer = () => {
           <div>
             <div className="flex gap-4 mb-6">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/haifame_taira/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-warm-yellow hover:text-white transition-colors hover:scale-110 transform"
