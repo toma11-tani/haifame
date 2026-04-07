@@ -24,14 +24,14 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-deep-green mb-6">Hai fame?</h2>
-              <p className="text-gray-700 mb-4 leading-relaxed text-base">
-                「お腹空いてる？」——これがお店の名前の意味です。<br />「食堂」のような雰囲気のお店を目指しています。
+              <p className="text-gray-700 mb-4 leading-relaxed text-sm md:text-base">
+                「お腹空いてる？」<br className="md:hidden" />——これがお店の名前の意味です。<br />「食堂」のような雰囲気のお店を目指しています。
               </p>
-              <p className="text-gray-700 mb-4 leading-relaxed text-base">
+              <p className="text-gray-700 mb-4 leading-relaxed text-sm md:text-base">
                 常連も、初めての人も。ひとりでも、大勢でも。<br />
                 誰でも気楽に食べて、飲んで、くつろげる場所に。
               </p>
-              <p className="text-gray-700 leading-relaxed text-base">
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                 肩肘張らずに、ふらっと立ち寄ってください。
               </p>
             </div>
@@ -113,13 +113,13 @@ const AboutPage = () => {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-2">初体験の提供</h2>
             <p className="text-warm-yellow italic mb-8">Prima Esperienza</p>
-            <p className="text-gray-200 leading-relaxed text-base mb-4">
+            <p className="text-gray-200 leading-relaxed text-sm md:text-base mb-4">
               「初めて食べた」「こんな組み合わせがあるんだ」——
             </p>
-            <p className="text-gray-200 leading-relaxed text-base mb-4">
+            <p className="text-gray-200 leading-relaxed text-sm md:text-base mb-4">
               地元のワインと地元の料理。シンプルだけど、出会ったことのない味わい。
             </p>
-            <p className="text-gray-200 leading-relaxed text-base">
+            <p className="text-gray-200 leading-relaxed text-sm md:text-base">
               高くなくていい。でも確かな「初めて」に出会える場所を目指しています。
             </p>
           </div>
@@ -146,10 +146,10 @@ const AboutPage = () => {
                 <div className="flex-1 h-2 bg-white"></div>
                 <div className="flex-1 h-2 bg-red-600"></div>
               </div>
-              <p className="text-gray-700 leading-relaxed text-base mb-6 mt-2">
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base mb-6 mt-2">
                 2〜3年前にイタリアを訪れたとき、忘れられない体験をしました。しゃべりながらわいわいと、雑多な活気の中で、地元の料理と地元のワインを楽しむ——日本ではなかなか出会えない雰囲気でした。
               </p>
-              <p className="text-gray-700 leading-relaxed text-base">
+              <p className="text-gray-700 leading-relaxed text-sm md:text-base">
                 「この感覚を大阪で再現したい。お客様にも体験してほしい。」<br />
                 それが、Hai fame? を始めた理由です。
               </p>
@@ -164,7 +164,7 @@ const AboutPage = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-deep-green mb-4">
             Hai fame?
           </h2>
-          <p className="text-gray-700 mb-8 text-base">
+          <p className="text-gray-700 mb-8 text-sm md:text-base">
             ふらっとお立ち寄りください。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

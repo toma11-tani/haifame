@@ -51,15 +51,15 @@ const HomePage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-deep-green mb-6">
               Hai fame?
             </h2>
-            <p className="text-gray-700 text-base leading-relaxed mb-4">
-              「お腹空いてる？」——これがお店の名前の意味です。<br />
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
+              「お腹空いてる？」<br className="md:hidden" />——これがお店の名前の意味です。<br />
               「食堂」のような雰囲気のお店を目指しています。
             </p>
-            <p className="text-gray-700 text-base leading-relaxed mb-4">
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-4">
               常連も、初めての人も。ひとりでも、大勢でも。<br />
               誰でも気軽に食べて、飲んで、くつろげる場所に。
             </p>
-            <p className="text-gray-700 text-base leading-relaxed">
+            <p className="text-gray-700 text-sm md:text-base leading-relaxed">
               肩肘張らずに、ふらっと立ち寄ってください。
             </p>
           </div>
@@ -118,13 +118,13 @@ const HomePage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-deep-green mb-6">
-                初めての体験を、気軽に。
+                初めての体験を、<br className="md:hidden" />気軽に。
               </h2>
-              <p className="text-gray-700 mb-4 leading-relaxed text-base">
-                知らなかった郷土料理、飲んだことのない地元のワイン。
+              <p className="text-gray-700 mb-4 leading-relaxed text-sm md:text-base">
+                知らなかった郷土料理、<br className="md:hidden" />飲んだことのない地元のワイン。
               </p>
-              <p className="text-gray-700 mb-6 leading-relaxed text-base">
-                お金をかけずに、でも確かな「初めて」に出会える場所を目指しています。
+              <p className="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                お金をかけずに、でも確かな「初めて」に<br className="md:hidden" />出会える場所を目指しています。
               </p>
 
               <div className="flex gap-2 mb-6">
