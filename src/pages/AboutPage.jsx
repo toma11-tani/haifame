@@ -37,7 +37,7 @@ const AboutPage = () => {
             </div>
             <div>
               <img
-                src="/haifame/images/front.jpeg"
+                src="/images/front.jpeg"
                 alt="Hai fame? Restaurant"
                 className="rounded-lg shadow-2xl w-full h-auto"
               />

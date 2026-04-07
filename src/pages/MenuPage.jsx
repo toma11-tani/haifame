@@ -7,7 +7,7 @@ const menuItems = [
     category: '前菜',
     categoryIt: 'Antipasto',
     description: 'イタリアの前菜を少しずつ。ボリュームたっぷり。',
-    image: '/haifame/images/antipasti.jpg',
+    image: '/images/antipasti.jpg',
   },
   {
     name: 'ポルペッティ（肉団子）',
@@ -15,7 +15,7 @@ const menuItems = [
     category: '一品',
     categoryIt: 'Piatto',
     description: 'しっかり食べごたえのある一皿。素朴で滋味深い味わいです。',
-    image: '/haifame/images/Polpette.jpg',
+    image: '/images/Polpette.jpg',
   },
   {
     name: 'パスタ',
@@ -23,7 +23,7 @@ const menuItems = [
     category: 'パスタ',
     categoryIt: 'Pasta',
     description: 'その日食べたい"気分"に合わせて。おなかいっぱい食べてほしいパスタです。',
-    image: '/haifame/images/pasta.jpg',
+    image: '/images/pasta.jpg',
   },
   {
     name: 'ドルチェ（日替わり）',
@@ -31,7 +31,7 @@ const menuItems = [
     category: 'ドルチェ',
     categoryIt: 'Dolce',
     description: 'その日のおすすめを。店内のボードでご確認ください。',
-    image: '/haifame/images/dolci.jpg',
+    image: '/images/dolci.jpg',
   },
   {
     name: '自家製レモンチェッロのソーダ割り',
@@ -39,7 +39,7 @@ const menuItems = [
     category: 'ドリンク',
     categoryIt: 'Drink',
     description: '自家製ならではのさわやかな香り。食前・食中どちらにも。',
-    image: '/haifame/images/drink.jpg',
+    image: '/images/drink.jpg',
   },
 ]
 
@@ -92,7 +92,7 @@ const MenuPage = () => {
             <div className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="overflow-hidden relative aspect-square">
                 <img
-                  src="/haifame/images/menu.JPG"
+                  src="/images/menu.JPG"
                   alt="本日のおすすめボード"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
