@@ -92,7 +92,7 @@ const MenuPage = () => {
             <div className="bg-soft-cream rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="overflow-hidden relative aspect-square">
                 <img
-                  src="/images/menu.JPG"
+                  src="/images/menu.jpg"
                   alt="本日のおすすめボード"
                   className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                 />
