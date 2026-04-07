@@ -11,7 +11,7 @@ import AccessPage from './pages/AccessPage'
 
 function App() {
   return (
-    <Router basename="/haifame">
+    <Router basename="/">
       <div className="min-h-screen">
         <ScrollToTop />
         <Navbar />
