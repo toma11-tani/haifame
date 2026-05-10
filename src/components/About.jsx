@@ -29,7 +29,7 @@ const About = () => {
           </div>
           <div className="order-1 lg:order-2">
             <img
-              src="/haifame/images/front.jpeg"
+              src="/images/front.jpeg"
               alt="Hai fame? Restaurant Front"
               className="rounded-lg shadow-xl w-full h-auto"
             />

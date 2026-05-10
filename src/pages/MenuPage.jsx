@@ -127,7 +127,7 @@ const MenuPage = () => {
             ふらっとお立ち寄りください。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/haifame/access" className="btn-secondary inline-block">
+            <a href="/access" className="btn-secondary inline-block">
               アクセス
             </a>
             <a

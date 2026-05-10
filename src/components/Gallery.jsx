@@ -6,11 +6,11 @@ const Gallery = () => {
 
   const images = [
     {
-      url: '/haifame/images/front.jpeg',
+      url: '/images/front.jpeg',
       alt: 'Hai fame? Restaurant Front',
     },
     {
-      url: '/haifame/images/menu1.jpg',
+      url: '/images/menu1.jpg',
       alt: 'Italian Vegetable Dish',
     },
     {
